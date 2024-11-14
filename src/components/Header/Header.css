@@ -1,0 +1,138 @@
+.header__main {
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+
+.header__main__left{
+  display: flex;
+  gap: 10px;
+  font-size: 3vw;
+  justify-content: space-between;
+}
+
+.header__main__right {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__main__input {
+  background-color: transparent;
+  border-bottom:2px solid green;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.header__main__input, .header__main__input span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color:var(--textColor);
+}
+
+.header__main__input input {
+background-color: transparent;
+outline: none;
+border: none;
+}
+
+.header__input_profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid rgb(58, 48, 48);
+}
+
+.header__input_profile img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+}
+
+
+@media (max-width: 1175px){
+  .menuToggle{
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* Medium devices (tablets) */
+  .header__main__left {
+    font-size: 3vw;
+    /* Even smaller font size */
+  }
+
+
+  .media {
+    display: none;
+  }
+
+  .header__main__right {
+    gap: 15px;
+    /* Reduce gap between items */
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Small devices (phones) */
+  .header__main {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Align items to the start */
+    padding: 10px;
+    /* Adjust padding */
+  }
+
+  .header__main__left {
+    font-size: 4.5vw;
+    /* Increase font size for better readability */
+    gap: 5px;
+    /* Smaller gap */
+  }
+
+  .header__main__right {
+    justify-content: flex-start;
+    /* Align items to the start */
+    gap: 10px;
+    /* Reduce gap */
+  }
+}
+
+@media (max-width: 576px) {
+
+  .header__main{
+    gap: 10px;
+  }
+  /* Extra small devices (phones) */
+  .header__main__left {
+    font-size: 5vw;
+    /* Adjust font size */
+  }
+  
+
+  .header__main__input {
+    gap: 10px;
+    padding: 8px 15px;
+    /* Smaller input padding */
+  }
+
+  .header__input_profile {
+    height: 40px;
+    display: none;
+    width: 40px;
+  }
+}

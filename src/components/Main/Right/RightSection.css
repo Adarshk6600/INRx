@@ -1,0 +1,248 @@
+.main__right {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 30px;
+  
+}
+
+.main__right__links {
+  display: flex;
+  gap: 10px;
+}
+
+.main__right__links button  {
+  background: var(--bgColor2);
+  padding: 5px 20px;
+  font-size: 14px;
+  box-shadow: 2px 2px 2px rgb(138, 138, 138);
+  border-radius: 20px;
+  
+}
+
+.main__right__input div img {
+  height: 25px;
+  width: 35px;
+}
+
+.main__right__input {
+  width: 100%;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.main__right__input div span {
+  display: flex;
+  gap: 5px;
+}
+
+.main__right__input div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background:var(--bgColor);
+  align-items: center;
+  padding: 10px 5px;
+
+}
+
+.main__right__card1{
+  border-radius: 20px;
+  background: var(--bgColor2);
+  min-width: 300px;
+  width: 100;
+  gap: 20px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+      justify-content: space-around;
+      box-shadow: var(--textShadow);
+}
+
+.main__right__card2 {
+  background: var(--bgColor2);
+  min-width: 300px;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    box-shadow: var(--textShadow);
+    border-radius: 20px;
+}
+
+.main__right_profile {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  background: var(--bgColor2);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+
+.right__input__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.right__input__total p:first-child {
+  color: rgb(78, 78, 78);
+}
+
+
+.main__right_profile .div__border__one {
+rotate: 270deg;
+} 
+
+.main__right_profile .div__border, .div__border__one {
+  height: 150%;
+  width: 40%;
+  position: absolute;
+  background-color: var(--textColor);
+}
+
+.main__right_profile img {
+ border-radius: 100%;
+  height: 85%;
+  width: 90%;
+  z-index: 1;
+}
+
+.main__right__card1 p {
+  font-size: 18px;
+  
+}
+
+.main__right__card1 span {
+  display: flex;
+  align-items: center;
+}
+
+.main__right__card1 h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.main__right__card1 span button {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  background: var(--bgColor);
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.card__button_arrow {
+ margin-left: 10px;
+ background: var(--bgColor); 
+ border-radius: 50%;
+ padding: 5px;
+}
+
+
+.main__right__input2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input__box__input2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.input__box__input2 input  {
+  background: none;
+  outline: none;
+}
+
+.input__box__input2 p {
+  background-color: rgb(188, 186, 186);
+  padding: 5px 12px ;
+
+}
+
+.main__right__input2 button {
+  display: flex;
+  gap: 5px;
+  padding: 15px;
+  width: 100%;
+  background-color: var(--green);
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgba(55, 55, 55, 0.474);
+}
+
+.main__right__input2 button img {
+  height: 20  px;
+  width: 30px;
+}
+
+@media screen and (max-width:920px) {
+  .main__right {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    margin-top: 100px;
+  }
+
+  .main__right__card1 {
+    flex: 1;
+  }
+  .main__right__card2 {
+    flex: 1;
+  }
+}
+
+
+
+
+@media screen and (max-width:650px) {
+  .main__right {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    margin-top: 200px;
+
+  }
+
+  .main__right_profile {
+    height: 100px;
+    width: 100px;
+  }
+  .main__right__card1 {
+    flex: 1;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .main__right__card2 {
+    flex: 1;
+        padding: 20px 30px;
+  }
+}

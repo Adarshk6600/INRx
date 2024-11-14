@@ -1,0 +1,30 @@
+.main__main {
+  height: 100%;
+  width: 100%;
+  padding-left: 17%;
+}
+
+.main__body {
+  display: flex;
+  padding: 10PX;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:1175px) {
+  .main__main{
+    padding: 10px;
+    width: 100%;
+  }
+
+  .main__body {
+    width: 100%;
+
+  }
+
+  .main__mid {
+    max-width: 100%;
+  }
+}
+
+

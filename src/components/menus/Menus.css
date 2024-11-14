@@ -1,0 +1,27 @@
+.menus__main {
+  display: flex;
+  padding: 10px;
+  gap: 40px;
+  font-weight:bold;
+  justify-content: center;
+  align-items:center;
+  font-size: var(--menuFont);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.menus__main span {
+  flex: 1;
+  display: flex;
+}
+
+.menus__main span:first-child {
+  flex: 0.5;
+  display: flex;
+  justify-content: right;
+}
+
+.menus__main:hover {
+  background-color: rgba(16, 13, 47, 0.621);
+  color: white;
+}

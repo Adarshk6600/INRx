@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --textShadow:0 4px 20px rgba(0, 0, 0, 0.338),
+      0 10px 30px rgba(0, 0, 0, 0.1); 
+      --menuFont:16px;
+      --green: #02FF01;
+    }
+
+
+
+        .light {
+          --textColor: black;
+          /* Updated primary color */
+          --bgColor2:rgb(179, 179, 179);
+          /* Updated accent color */
+          --bgColor:white;
+          /* Updated background color */
+          --textHover: #ffffff;
+    
+        }
+
+
+
+
+/* Neon Night (Dark Theme) */
+.dark {
+  --textColor: white;
+  /* Updated primary color */
+  --bgColor2:rgba(37, 37, 37, 0.501);
+  /* Updated accent color */
+  --bgColor:black;
+  /* Updated background color */
+  --textHover:#02FF01;
+  
+}
+
+/* Elegant Earth (Neutral Theme) */
+.earth {
+  --textColor: #641d07;
+  /* Updated primary color */
+  --bgColor2:#f7f3e3;
+  /* Updated accent color */
+  --bgColor: #fad396;
+  /* Updated background color */
+  --textHover: rgb(255, 227, 69);
+}
+
+/* Ocean Breeze (Cool Theme) */
+.ocean {
+  --textColor: #063642;
+  /* Updated primary color */
+  --bgColor2: #b5e5f5;
+  /* Updated accent color */
+  --bgColor: #d8e7f6;
+  /* Updated background color */
+  --textHover: rgb(250, 186, 197);
+}
+
+/* Golden Hour (Warm Theme) */
+.fancy {
+--textColor: #452d09;
+  /* Deep Gold for text */
+  --bgColor2: #cfaf7bdf;
+  /* Golden Bronze for card color */
+  --bgColor: #FFF5E1;
+  /* Updated background color */
+  --textHover:white;
+}
+
+.lusion {
+  
+  --textColor:#5569f1;
+    /* Deep Gold for text */
+    --bgColor2: #050a44;
+    /* Golden Bronze for card color */
+    --bgColor: #141619;
+    /* Updated background color */
+    --textHover: #b3b4bd;
+
+}
+
+
+
+
+
+
+.nature {
+
+  --textColor: #fbdfb1;
+  /* Deep Gold for text */
+  --bgColor2: #4D774E;
+  /* Golden Bronze for card color */
+  --bgColor:#164A41;
+  /* Updated background color */
+  --textHover: #b3b4bd;
+
+}
+
+.strawberry {
+
+  --textColor: rgb(8, 8, 60);
+  /* Deep Gold for text */
+  --bgColor2: #d0bdf4;
+  /* Golden Bronze for card color */
+  --bgColor:#a28089;
+  /* Updated background color */
+  --textHover: #b3b4bd;
+
+}
+
+
+.future {
+
+  --textColor: rgb(255, 255, 255);
+  /* Deep Gold for text */
+  --bgColor2: radial-gradient(circle at center center, transparent 0%, rgb(0, 0, 0) 85%), linear-gradient(78deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 50%, rgba(60, 60, 60, 0.05) 50%, rgba(60, 60, 60, 0.05) 100%), linear-gradient(227deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(52, 52, 52, 0.05) 50%, rgba(52, 52, 52, 0.05) 100%), linear-gradient(240deg, rgba(98, 98, 98, 0.05) 0%, rgba(98, 98, 98, 0.05) 50%, rgba(249, 249, 249, 0.05) 50%, rgba(249, 249, 249, 0.05) 100%), linear-gradient(187deg, rgba(1, 1, 1, 0.05) 0%, rgba(1, 1, 1, 0.05) 50%, rgba(202, 202, 202, 0.05) 50%, rgba(202, 202, 202, 0.05) 100%), linear-gradient(101deg, rgba(61, 61, 61, 0.05) 0%, rgba(61, 61, 61, 0.05) 50%, rgba(254, 254, 254, 0.05) 50%, rgba(254, 254, 254, 0.05) 100%), linear-gradient(176deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(147, 147, 147, 0.05) 50%, rgba(147, 147, 147, 0.05) 100%), linear-gradient(304deg, rgba(183, 183, 183, 0.05) 0%, rgba(183, 183, 183, 0.05) 50%, rgba(57, 57, 57, 0.05) 50%, rgba(57, 57, 57, 0.05) 100%), radial-gradient(circle at center center, hsl(351, 4%, 12%), hsl(351, 4%, 12%));
+  /* Golden Bronze for card color */
+
+  --bgColor:linear-gradient(216deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 25%, rgba(42, 42, 42, 0.05) 25%, rgba(42, 42, 42, 0.05) 38%, rgba(223, 223, 223, 0.05) 38%, rgba(223, 223, 223, 0.05) 75%, rgba(36, 36, 36, 0.05) 75%, rgba(36, 36, 36, 0.05) 100%), linear-gradient(44deg, rgba(128, 128, 128, 0.05) 0%, rgba(128, 128, 128, 0.05) 34%, rgba(212, 212, 212, 0.05) 34%, rgba(212, 212, 212, 0.05) 57%, rgba(25, 25, 25, 0.05) 57%, rgba(25, 25, 25, 0.05) 89%, rgba(135, 135, 135, 0.05) 89%, rgba(135, 135, 135, 0.05) 100%), linear-gradient(241deg, rgba(55, 55, 55, 0.05) 0%, rgba(55, 55, 55, 0.05) 14%, rgba(209, 209, 209, 0.05) 14%, rgba(209, 209, 209, 0.05) 60%, rgba(245, 245, 245, 0.05) 60%, rgba(245, 245, 245, 0.05) 69%, rgba(164, 164, 164, 0.05) 69%, rgba(164, 164, 164, 0.05) 100%), linear-gradient(249deg, rgba(248, 248, 248, 0.05) 0%, rgba(248, 248, 248, 0.05) 32%, rgba(148, 148, 148, 0.05) 32%, rgba(148, 148, 148, 0.05) 35%, rgba(202, 202, 202, 0.05) 35%, rgba(202, 202, 202, 0.05) 51%, rgba(181, 181, 181, 0.05) 51%, rgba(181, 181, 181, 0.05) 100%), linear-gradient(92deg, hsl(214, 0%, 11%), hsl(214, 0%, 11%));
+  /* Updated background color */
+  --textHover: rgb(255, 134, 134);
+
+}
+
+
+
+.neon {
+  --textColor: #00ffcc;
+    /* Deep Gold for text */
+    --bgColor2: #0f1e0ab9;
+    /* Golden Bronze for card color */
+    --bgColor:linear-gradient(-210deg,#000000 , #434343);
+    /* Updated background color */
+    --textHover:rgb(255, 184, 220);
+}
